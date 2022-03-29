@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "e668c235-45f8-4804-b5dc-b62a63c0b2f7",
+		"name": "nodeCourse_todolist-hexoku 遠端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shrouded-chamber-49232.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"shrouded-chamber-49232",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天記得刷牙\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shrouded-chamber-49232.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"shrouded-chamber-49232",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天記得刷牙修正\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shrouded-chamber-49232.herokuapp.com/todos/d47998d1-a2d7-421c-95e5-c2f711cdb02a",
+					"protocol": "https",
+					"host": [
+						"shrouded-chamber-49232",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"d47998d1-a2d7-421c-95e5-c2f711cdb02a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shrouded-chamber-49232.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"shrouded-chamber-49232",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://shrouded-chamber-49232.herokuapp.com/todos/82c026c8-3e27-47f9-b399-fe80ade3e8f7",
+					"protocol": "https",
+					"host": [
+						"shrouded-chamber-49232",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"82c026c8-3e27-47f9-b399-fe80ade3e8f7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
